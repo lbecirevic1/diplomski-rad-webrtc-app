@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  -->
+    </head>
+    <body>
+        <div id="glavniDiv">
+        <div id="sadrzaj">
+            <input  placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br>
+            <button onclick="sendUsername()">Send</button>
+            <button onclick="startCall()">Start Call</button>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+    </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>
